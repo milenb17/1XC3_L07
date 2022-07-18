@@ -12,8 +12,13 @@
 
 int main(int argc, char *argv[])
 {
-
-
+  int length = argc - 1;
+  int arr[length];
+  for (int i = 0; i <  length; i++) {
+    arr[i] = atoi(argv[i+1]);
+  }
+  int m = max(arr, length);
+  printf("%d\n", m);
 
   return 0;
 }
